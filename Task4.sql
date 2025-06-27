@@ -26,22 +26,21 @@ SELECT Gender, MAX(Marks) AS highest_marks
 FROM students
 GROUP BY Gender;
 
- 
-    SELECT Dept,
-    COUNT(*) AS total_students,
-    AVG(Marks) AS average_marks
-	FROM students
-	GROUP BY Dept
-	HAVING AVG(Marks) > 75;
+SELECT Dept,
+COUNT(*) AS total_students,
+AVG(Marks) AS average_marks
+FROM students
+GROUP BY Dept
+HAVING AVG(Marks) > 75;
 
 
-   SELECT  Dept,
-    COUNT(*) AS total_students,
-    AVG(Marks) AS average_marks,
-    MAX(Marks) AS highest_marks,
-    MIN(Marks) AS lowest_marks,
-    SUM(Marks) AS total_marks
-	FROM students
-	GROUP BY Dept
-	HAVING AVG(Marks) > 75;
+SELECT  Dept,
+COUNT(*) AS total_students,
+AVG(Marks) AS average_marks,
+MAX(Marks) AS highest_marks,
+MIN(Marks) AS lowest_marks,
+SUM(Marks) AS total_marks
+FROM students
+GROUP BY Dept
+HAVING AVG(Marks) > 75;
 
